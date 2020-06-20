@@ -94,14 +94,14 @@ void ADD(int *_bit_array_base, const size_t _bit_size, const int* const _bit_arr
 	copybitarray(_bit_array_base, _bit_size, _left);
 }
 
-void SUB(int *_bit_array_base, const size_t _bit_size, const int* const _bit_array_left, int* _bit_array_right){
-	auto int one[_bit_size];
-	setzbin(one, _bit_size);
-	inttbin(one, _bit_size, 1);
+// void SUB(int *_bit_array_base, const size_t _bit_size, const int* const _bit_array_left, int* _bit_array_right){
+// 	auto int one[_bit_size];
+// 	setzbin(one, _bit_size);
+// 	inttbin(one, _bit_size, 1);
 	
-	NOT(_bit_array_right, _bit_size);
-	ADD(_bit_array_right, _bit_size, _bit_array_right, one);
+// 	NOT(_bit_array_right, _bit_size);
+// 	ADD(_bit_array_right, _bit_size, _bit_array_right, one);
 	
-	ADD(_bit_array_base, _bit_size, _bit_array_left, _bit_array_right);
-}
+// 	ADD(_bit_array_base, _bit_size, _bit_array_left, _bit_array_right);
+// }
 
